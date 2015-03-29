@@ -1,0 +1,9 @@
+{% macro username_form(submit_type) %}
+	<dl>
+		<dt>username:</dt>
+		<dd><input type="text" name="username" /></dd>
+		<dt>password:</dt>
+		<dd><input type="password" name="password" /></dd>
+		<dd><input type="submit" value="{{ submit_type }}"/></dd>
+	</dl>
+{% endmacro %}

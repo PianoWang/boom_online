@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>bomb:log in</title>
+</head>
+<body>
+    <p>{{ error_message }}</p>
+	{% import 'username_form.html' as username_form %}
+    <form action = "{{ url_for('log_in') }}" method = post>
+        {{ username_form.username_form('login') }}
+    </form>
+    <a href="{{ url_for('register') }}">register</a>
+</body>
+</html>
