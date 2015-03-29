@@ -1,0 +1,9 @@
+#compiled python
+*.pyc
+
+#vim swap
+*.swp
+
+#test database
+*.db
+*.db-journal
